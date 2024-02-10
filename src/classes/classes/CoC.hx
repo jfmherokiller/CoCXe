@@ -183,21 +183,21 @@ public class CoC extends MovieClip
     /**
      * Raw NG+ level
      */
-    public function newGamePlusLevel():int {
+    public function newGamePlusLevel():Int {
         return flags[kFLAGS.NEW_GAME_PLUS_LEVEL];
     }
     
     /**
      * NG+ level capped
      */
-    public function newGamePlusMod():int {
+    public function newGamePlusMod():Int {
         return Utils.boundInt(0, newGamePlusLevel(), 5);
     }
-    public function newGamePlusFactor():Number {
+    public function newGamePlusFactor():Float {
         return 1 + newGamePlusMod();
     }
     
-    private static function setUpLogging():void {
+    private static function setUpLogging():Void {
         var traceTarget:TraceTarget = new TraceTarget();
 
         traceTarget.level = LogEventLevel.WARN;
