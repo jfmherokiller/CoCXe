@@ -145,29 +145,29 @@ public class CoC extends MovieClip
     /**
      * True if currently loading save.
      */
-    public var isLoadingSave:Boolean;
-    public var debug:Boolean;
+    public var isLoadingSave:Bool;
+    public var debug:Bool;
     public var ver:String;
     public var version:String;
-    public var versionID:uint = 0;
-    public var permObjVersionID:uint = 0;
+    public var versionID:Int = 0;
+    public var permObjVersionID:Int = 0;
     public var images:ImageManager;
     public var player:Player;
     public var player2:Player;
     public var monster:Monster;
     public var flags:DefaultDict;
     public var achievements:DefaultDict;
-    private var _gameState:int;
+    private var _gameState:Int;
     public var time :TimeModel;
-    public var textHistory:Array;
+    public var textHistory:Array<Any>;
     public var currentText:String;
-    public var oldStats:*; // I *think* this is a generic object
+    public var oldStats:Any; // I *think* this is a generic object
     public var inputManager:InputManager;
     public var monkey:ChaosMonkey;
-    public var testingBlockExiting:Boolean;
+    public var testingBlockExiting:Bool;
 
-    public var kFLAGS_REF:*;
-    public var kACHIEVEMENTS_REF:*;
+    public var kFLAGS_REF:Any;
+    public var kACHIEVEMENTS_REF:Any;
 
     public function get inCombat():Boolean { return _gameState == 1; }
 
