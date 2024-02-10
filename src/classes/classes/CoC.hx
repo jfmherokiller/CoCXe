@@ -244,7 +244,7 @@ public class CoC extends MovieClip
         //DEBUG-SPECIFIC CONFIG SETTINGS
         if (CoC_Settings.debugBuild) lockCheats = false;
     }
-    private function _postInit(e:Event):void {
+    private function _postInit(e:Event):Void {
         // Hooking things to MainView.
         this.mainView.onNewGameClick = charCreation.newGameGo;
         this.mainView.onAppearanceClick = playerAppearance.appearance;
@@ -252,10 +252,10 @@ public class CoC extends MovieClip
         this.mainView.onLevelClick = playerInfo.levelUpMenu;
         this.mainView.onPerksClick = perkMenu.displayPerks;
         this.mainView.onStatsClick = playerInfo.displayStats;
-        this.mainView.onBottomButtonClick = function(i:int, button:CoCButton):void {
+        this.mainView.onBottomButtonClick = function(i:Int, button:CoCButton):Void {
             textHistory.push("<br>["+button.labelText+"]<br>");
         };
-        CoCButton.clickErrorHandler = function(error:Error, button:CoCButton):void {
+        CoCButton.clickErrorHandler = function(error:Error, button:CoCButton):Void {
             trace(error.getStackTrace());
             EngineCore.addButton(0, "Rescue", EventParser.playerMenu);
             mainView.mainText.htmlText +=
