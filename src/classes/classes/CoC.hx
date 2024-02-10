@@ -64,7 +64,7 @@ public class CoC extends MovieClip
         CoC.setUpLogging();
     }*/
     private static var _instance:CoC;
-    public static function get instance():CoC{
+    public static function get_instance():CoC{
         return _instance;
     }
     //Game Version
