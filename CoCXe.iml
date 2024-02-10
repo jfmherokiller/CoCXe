@@ -13,6 +13,17 @@
     <orderEntry type="jdk" jdkName="Haxe toolkit" jdkType="Haxe toolkit" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Haxelib: lime:8.1.1">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/lime/8,1,1/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/lime/8,1,1/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
       <library name="Haxelib: openfl:9.3.2">
         <CLASSES>
           <root url="file://C:/HaxeToolkit/haxe/lib/openfl/9,3,2/src" />
@@ -20,6 +31,28 @@
         <JAVADOC />
         <SOURCES>
           <root url="file://C:/HaxeToolkit/haxe/lib/openfl/9,3,2/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Haxelib: actuate:1.9.0">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/actuate/1,9,0/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/actuate/1,9,0/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Haxelib: format:3.7.0">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/format/3,7,0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/format/3,7,0" />
         </SOURCES>
       </library>
     </orderEntry>

@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project>
+<project
+		xmlns="http://lime.openfl.org/project/1.0.4"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/xsd/project-1.0.4.xsd">
 	
 	<meta title="CoCXe" package="com.sample.cocxe" version="1.0.0" company="Company Name" />
-	<app main="Main" path="Export" file="CoCXe" swf-version="32"/>
+	<app main="Main" path="bin" file="CoCXe" swf-version="32"/>
+
+	<window width="1000" height="800" background="0xFFFFFF" unless="html5"/>
 	
 	<source path="Source" />
-	
-	<haxelib name="openfl" />
-	
+
+	<haxelib name="lime"/>
+	<haxelib name="openfl"/>
+	<haxelib name="actuate"/>
+	<haxelib name="format"/>
+	<haxelib name="hxcpp-debug-server" if="cpp" unless="mobile"/>
+
+
 	<assets path="Assets" rename="assets" />
 	
 </project>
