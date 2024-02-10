@@ -6,7 +6,7 @@
 
 	<window width="1000" height="800" background="0xFFFFFF" unless="html5"/>
 	
-	<source path="Source" />
+	<source path="src" />
 
 	<haxelib name="lime"/>
 	<haxelib name="openfl"/>
@@ -15,6 +15,6 @@
 	<haxelib name="hxcpp-debug-server" if="cpp" unless="mobile"/>
 
 
-	<assets path="Assets" rename="assets" />
+	<assets path="res" />
 	
 </project>
