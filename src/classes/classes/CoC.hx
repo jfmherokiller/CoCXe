@@ -547,25 +547,25 @@ public class CoC extends MovieClip
     /**
      * Places combobox after the visible text.
      */
-    public function placeComboBoxAfterText():void {
+    public function placeComboBoxAfterText():Void {
         flushOutputTextToGUI();
         mainView.placeComboBox(mainView.mainText.x+10, mainView.mainText.y+mainView.mainText.textHeight+10);
         EngineCore.outputText("\n\n\n");
     }
-    public function showComboBox(items:Array,prompt:String,onChange:Function):void {
+    public function showComboBox(items:Array,prompt:String,onChange:Function):Void {
         mainView.showComboBox(items,prompt,onChange);
         placeComboBoxAfterText();
     }
-    private static var initQueue:/*Function*/Array      = [];
-    public static function onGameInit(f:Function):void {
+    private static var initQueue:/*Function*/Array<Function>      = [];
+    public static function onGameInit(f:Function):Void {
         initQueue.push(f);
     }
-    private static function execPostInit():void {
+    private static function execPostInit():Void {
         var f:Function;
         while ((f = initQueue.shift())) f();
     }
 
-    public function get gameState():int {
+    public function get_gameState():Int {
         return _gameState;
     }
 }
