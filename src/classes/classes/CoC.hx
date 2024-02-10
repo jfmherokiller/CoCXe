@@ -513,14 +513,14 @@ public class CoC extends MovieClip
             mainViewManager.showSpriteBitmap(SpriteDb.bitmapData(choice));
     }
 
-    public function outputHistory():void {
+    public function outputHistory():Void {
         mainView.hideTestInputPanel();
         EngineCore.clearOutputTextOnly();
         var txt:String = textHistory.join("<br>");
         textHistory = [];
         EngineCore.rawOutputText(txt);
         // On the next animation frame
-        setTimeout(function():void {
+        setTimeout(function():Void {
             mainView.scrollBar.value = mainView.scrollBar.maximum;
         },0);
     }
