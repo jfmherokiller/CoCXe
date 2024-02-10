@@ -6,8 +6,8 @@
  order of these imports until more is known about what needs to load and when.
 */
 
-package classes
-{
+package classes;
+
 // BREAKING ALL THE RULES.
 import classes.GlobalFlags.kACHIEVEMENTS;
 import classes.GlobalFlags.kFLAGS;
@@ -569,4 +569,4 @@ public class CoC extends MovieClip
         return _gameState;
     }
 }
-}
+
