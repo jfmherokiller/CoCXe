@@ -201,11 +201,11 @@ public class CoC extends MovieClip
         var traceTarget:TraceTarget = new TraceTarget();
 
         traceTarget.level = LogEventLevel.WARN;
-
-        CONFIG::debug
-        {
-            traceTarget.level = LogEventLevel.DEBUG;
-        }
+        //the hell do i do here
+        //CONFIG::debug
+       // {
+       //     traceTarget.level = LogEventLevel.DEBUG;
+       // }
 
         //Add date, time, category, and log level to the output
         traceTarget.includeDate = true;
