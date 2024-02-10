@@ -169,16 +169,16 @@ public class CoC extends MovieClip
     public var kFLAGS_REF:Any;
     public var kACHIEVEMENTS_REF:Any;
 
-    public function get inCombat():Boolean { return _gameState == 1; }
+    public function get_inCombat():Bool { return _gameState == 1; }
 
-    public function set inCombat(value:Boolean):void { _gameState = (value ? 1 : 0); }
+    public function set_inCombat(value:Bool):Void { _gameState = (value ? 1 : 0); }
 
-    public function resetGameState():void {
+    public function resetGameState():Void {
         _gameState = 3;
     }
-    private function gameStateDirectGet():int { return _gameState; }
+    private function gameStateDirectGet():Int { return _gameState; }
 
-    private function gameStateDirectSet(value:int):void { _gameState = value; }
+    private function gameStateDirectSet(value:Int):Void { _gameState = value; }
     
     /**
      * Raw NG+ level
