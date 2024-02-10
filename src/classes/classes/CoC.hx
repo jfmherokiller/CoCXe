@@ -50,7 +50,7 @@ import mx.logging.targets.TraceTarget;
     // Add in descriptions for the include statements. Many of the description text code is inside of these.
     // Suggest moving or removing old comments referencing things that aren't needed anymore.
 
-[SWF( width="1420", height="800", pageTitle="Corruption of Champions", backgroundColor="#000000")]
+//[SWF( width="1420", height="800", pageTitle="Corruption of Champions", backgroundColor="#000000")]
 
 public class CoC extends MovieClip
 {
