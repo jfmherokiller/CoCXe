@@ -79,9 +79,9 @@ public class CoC extends MovieClip
     public var lockCheats:Boolean = true;
 
     //Used to restrict random drops from overlapping uniques
-    public var plotFight:Boolean = false;
-    public var timeQ:Number = 0; // Queued hours
-    public var timeQmin:int = 0; // Queued minutes
+    public var plotFight:Bool = false;
+    public var timeQ:Int = 0; // Queued hours
+    public var timeQmin:Int = 0; // Queued minutes
 
     /*private static var doCamp:Function; //Set by campInitialize, should only be called by playerMenu
     private static function campInitialize(passDoCamp:Function):void { doCamp = passDoCamp; }*/
