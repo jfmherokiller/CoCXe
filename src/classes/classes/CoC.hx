@@ -439,15 +439,15 @@ public class CoC extends MovieClip
         }
         */
     }
-    private function adjustEncounterChance(pool:/*Encounter*/Array, e:Encounter, c:Number):Number {
-        if (c === Encounters.ALWAYS) return c;
-        if (e is SimpleEncounter) {
+    private function adjustEncounterChance(pool:/*Encounter*/Array, e:Encounter, c:Float):Float {
+        if (c == Encounters.ALWAYS) return c;
+        if ((e is SimpleEncounter)) {
             if ('day' in e && !e['day'] && !BaseContent.isNightTime) return 0;
             if ('night' in e && !e['night'] && BaseContent.isNightTime) return 0;
         }
         return c;
     }
-    private function onEncounterSelect(pool:/*Array*/Array, pick:Encounter):void {
+    private function onEncounterSelect(pool:/*Array*/Array, pick:Encounter):Void {
         // How chance adjustment works
         // When event is picked, we reduce its chance by 0.1 to simulate "picking a card"
         // When all events total to <= 0, we reset their adjustment to +baseChance to simulate "returning cards to deck"
@@ -460,11 +460,11 @@ public class CoC extends MovieClip
         // if (pick is SimpleEncounter) (pick as SimpleEncounter).adjustment -= 0.1;
     }
 
-    private function loadStory():void {
+    private function loadStory():Void {
         compiler.includeFile("coc.xml", true);
     }
 
-    public function run():void
+    public function run():Void
     {
         this.inputManager.showHotkeys = false;
         trace("Initializing races");
@@ -488,13 +488,13 @@ public class CoC extends MovieClip
         }
     }
 
-    public function forceUpdate():void
+    public function forceUpdate():Void
     {
         _updateHack.x = 999;
         _updateHack.addEventListener(Event.ENTER_FRAME, moveHackUpdate);
     }
 
-    public function moveHackUpdate(e:Event):void
+    public function moveHackUpdate(e:Event):Void
     {
         _updateHack.x -= 84;
 
@@ -505,7 +505,7 @@ public class CoC extends MovieClip
         }
     }
 
-    public function spriteSelect(choice:Class = null):void {
+    public function spriteSelect(choice:Class = null):Void {
         // Inlined call from lib/src/coc/view/MainView.as
         if (choice == null || flags[kFLAGS.SHOW_SPRITES_FLAG] == 1)
             mainViewManager.hideSprite();
