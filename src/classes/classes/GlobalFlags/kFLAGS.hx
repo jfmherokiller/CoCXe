@@ -1,9 +1,9 @@
 // The extra folder is to let the package namespacing seperate out the statics from the classes.* space.
 // Global flags can now be brought into the main program by "import classes.GlobalFlags.*"
 
-package classes.GlobalFlags
-{
-	public class kFLAGS
+package classes.GlobalFlags;
+
+class kFLAGS
 	{
 public static const UNKNOWN_FLAG_NUMBER_00000:int                                   =    0;
 public static const MARBLE_PREGNANCY_INCUBATION:int                                 =    1; // Marble Pregnancy Incubation
