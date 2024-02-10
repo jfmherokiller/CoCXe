@@ -52,7 +52,7 @@ import mx.logging.targets.TraceTarget;
 
 //[SWF( width="1420", height="800", pageTitle="Corruption of Champions", backgroundColor="#000000")]
 
-public class CoC extends MovieClip
+class CoC extends MovieClip
 {
 /*    {
         *//*
@@ -76,7 +76,7 @@ public class CoC extends MovieClip
 
     //Lock cheats menus from public
     // builds.
-    public var lockCheats:Boolean = true;
+    public var lockCheats:Bool = true;
 
     //Used to restrict random drops from overlapping uniques
     public var plotFight:Bool = false;
