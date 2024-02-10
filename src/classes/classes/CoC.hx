@@ -54,15 +54,15 @@ import mx.logging.targets.TraceTarget;
 
 public class CoC extends MovieClip
 {
-    {
-        /*
+/*    {
+        *//*
          * This is a static initializer block, used as an ugly hack to setup
          * logging before any of the class variables are initialized.
          * This is done because they could log messages during construction.
-         */
+         *//*
 
         CoC.setUpLogging();
-    }
+    }*/
     private static var _instance:CoC;
     public static function get instance():CoC{
         return _instance;
