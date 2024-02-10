@@ -411,7 +411,7 @@ public class CoC extends MovieClip
         this.addFrameScript( 0, this.run );
         //setTimeout(this.run,0);
     }
-    private function beforeEncounterSelect(pool:/*Encounter*/Array):void {
+    private function beforeEncounterSelect(pool:/*Encounter*/Array):Void {
         // Disabled - interferes with the new encounter system
         /*
         while (true) {
